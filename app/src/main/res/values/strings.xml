@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Sensor Tester</string>
+    <string name="app_title">Sensor Tester</string>
+    <string name="gps_button">GPS</string>
+    <string name="giroscopio_button">GIROSCÓPIO</string>
+    <string name="camera_button">CAMERA</string>
+    <string name="lanterna_button">LANTERNA</string>
+    <string name="ajuda_button">Ajuda</string>
+    <string name="voltar_button">Voltar</string>
+    <string name="ajuda_texto">O Aplicativo tem o objetivo de checar os sensores do celular e informar o úsuario sobre eles.</string>
 </resources>
