@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent gps = new Intent(this, GPS.class);
         startActivity(gps);
     }
-    public void IrGiroscopio(View view){
-        Intent giroscopio = new Intent(this, Giroscopio.class);
-        startActivity(giroscopio);
+    public void IrAcelerometro(View view){
+        Intent acelerometro = new Intent(this, Acelerometro.class);
+        startActivity(acelerometro);
     }
     public void IrCamera(View view){
         Intent camera = new Intent(this, Camera.class);
