@@ -10,6 +10,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ public class GPS extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gps);
         textocoordenadas = (TextView)findViewById(R.id.textView3);
+        getSupportActionBar().hide();
     }
 
     public void buscarlocalizacao(View v){
@@ -59,6 +61,12 @@ public class GPS extends AppCompatActivity {
 
 
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+    public void irMaps(View view){
+        Intent map = new Intent(android.content.Intent.ACTION_VIEW);
+        map.setData(Uri.parse("geo: " + XYZCoordenadas.latitude + "," + XYZCoordenadas.longitude));
+        startActivity(map);
 
     }
 }

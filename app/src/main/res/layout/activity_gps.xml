@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="irMenu"
     tools:context=".GPS">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -15,6 +14,7 @@
         android:layout_marginBottom="40dp"
         android:clickable="true"
         android:contentDescription="@string/voltar_button"
+        android:onClick="irMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -42,4 +42,15 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="94dp"
+        android:onClick="irMaps"
+        android:text="@string/irmaps_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ public class Ajuda extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajuda);
+        getSupportActionBar().hide();
     }
     public void irMenu(View view){
         Intent menu = new Intent(this, MainActivity.class);

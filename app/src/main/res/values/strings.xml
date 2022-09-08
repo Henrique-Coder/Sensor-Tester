@@ -9,4 +9,6 @@
     <string name="voltar_button">Voltar</string>
     <string name="ajuda_texto">O Aplicativo tem o objetivo de checar os sensores do celular e informar o úsuario sobre eles.</string>
     <string name="coord_button">Testar</string>
+    <string name="lanternaliga_button">Ligar</string>
+    <string name="irmaps_button">Ir para o google maps</string>
 </resources>
